@@ -1,0 +1,22 @@
+name: Deploy to Vercel
+on:
+  push:
+    branches:
+      - main
+      - stage
+      - qa
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Trigger Vercel deployment
+        run: |
+          git config user.name ${{ secrets.USER }}
+          git config user.email ${{ secrets.EMAIL }}
+          git commit --allow-empty -m "deploy to vercel"
+          git push

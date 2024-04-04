@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme */
+@import "@splidejs/react-splide/css";
+/* @import '@splidejs/react-splide/css/core'; */
+
+@font-face {
+  font-family: 'cochocib-script-latin-pro';
+  src: url('../app/cochocib-script-latin-pro.ttf') format('truetype');
+}
+
+* {}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+.statistics-bg {
+  background-image: linear-gradient(to right,
+      #054a57,
+      #0c4552,
+      #11414e,
+      #153c49,
+      #173844);
+}
+
+.splide__pagination__page.is-active {
+  background: #0099bc !important;
+}
+
+@keyframes whaBtn {
+  0% {
+    width: 3rem;
+  }
+
+  25% {
+    width: 18rem;
+  }
+
+  50% {
+    width: 3rem;
+  }
+
+  100% {
+    width: 3rem;
+  }
+}
+
+.learn-more {
+  width: 3rem;
+  animation: whaBtn 12s ease-in-out 5s infinite;
+
+  /* animation: whaBtn 3s infinite ease 5s; */
+  /* animation-name: whaBtn; */
+  /* animation-duration: 2.5s; */
+  /* animation-iteration-count: infinite; */
+}
+
+/* text classes */
+
+.font-heading-2-bold {
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 1.2;
+  color: var(--Color-Text-Primary, #033d59);
+  line-height: 50px;
+}
+
+.font-heading-6-semibold {
+  color: var(--Color-Text-Primary, #033d59);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  /* 150% */
+}
+
+/* Font/Heading 6/Semibold */
+
+.font-base-regular {
+  color: var(--Color-Text-Secondary, #035476);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.font-base-semibold {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+.notion-collection-page-properties {
+  display: none !important;
+}
+.notion-page {
+  padding: 0;
+}
