@@ -42,30 +42,32 @@ const testimonialsData = [
 
 export const Testimonials = () => {
   return (
-    <MaxWidthWrapper className="max-w-7xl">
-      <section className="py-8  h-96  flex align-center justify-center flex-col w-full">
-        <h3 className="text-[#002f4b] text-2xl font-bold mb-4 text-center">
-          Lo que nuesrtos clientes piensan de nosotros
-        </h3>
-        <Carousel>
-          <CarouselContent>
-            {testimonialsData.map((testimonial) => (
-              <CarouselItem
-                key={testimonial.id}
-                className="md:basis-1/2 lg:basis-1/3 relative"
-              >
-                <TestimonialCard testimonial={testimonial} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-
-          <div className="hidden md:block">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
-        </Carousel>
-      </section>
-    </MaxWidthWrapper>
+  <div className="w-full flex justify-center bg-white">
+      <MaxWidthWrapper className="max-w-7xl ">
+        <section className="py-8  h-96  flex align-center justify-center flex-col w-full">
+          <h3 className="text-[#002f4b] text-2xl font-bold mb-4 text-center">
+            Lo que nuesrtos clientes piensan de nosotros
+          </h3>
+          <Carousel>
+            <CarouselContent>
+              {testimonialsData.map((testimonial) => (
+                <CarouselItem
+                  key={testimonial.id}
+                  className="md:basis-1/2 lg:basis-1/3 relative"
+                >
+                  <TestimonialCard testimonial={testimonial} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+    
+            <div className="hidden md:block">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </section>
+      </MaxWidthWrapper>
+  </div>
   );
 };
 

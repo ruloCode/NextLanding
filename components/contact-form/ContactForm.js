@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
+import { Button } from "../ui/button";
 
 export const ContactForm = () => {
   const [submit, submitting] = useFormspark({
@@ -68,12 +69,8 @@ export const ContactForm = () => {
     
         <div className="flex flex-wrap -mx-3 mt-6">
           <div className="w-full px-3">
-            <button
-              type="submit"
-              className="w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
-            >
-              Enviar
-            </button>
+          <Button   className='md:text-lg p-4 md:p-6  font-semibold w-full bg-[#008DDA]  '>Enviar</Button>
+           
           </div>
         </div>
       </form>

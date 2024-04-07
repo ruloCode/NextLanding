@@ -9,7 +9,6 @@ import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -21,7 +20,6 @@ export const viewport = {
 export const dynamic = "force-dynamic";
 
 export default async function RootLayout({ children }) {
-
   return (
     <html lang="es">
       <head>
@@ -31,10 +29,7 @@ export default async function RootLayout({ children }) {
       <body
         className={`${montserrat.className} relative bg-[#F7F8F9] select-none`}
       >
-        <Layout  >
-        {children}
-
-        </Layout>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
