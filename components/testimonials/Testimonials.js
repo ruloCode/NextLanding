@@ -8,33 +8,35 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Testimonio1 from "../../public/assets/testimonio_1.png";
+import Testimonio2 from "../../public/assets/testimonio_2.png";
+import Testimonio3 from "../../public/assets/testimonio_3.png";
 import TestimonialCard from "./TestimonialCard";
 
 const testimonialsData = [
   {
     id: "01",
     avatar: Testimonio1,
-    name: "Amore Amore",
+    name: "Martin Rivera",
     content:
-      "“Recibi mi pedido en perfectas condiciones tenía miedo de que fuera algún fraude pero no fue asi. siempre estuvieron en contacto conmigo muy amables para atender mis dudas de primera compra, seguiré pidiendo y tienen siempre algún descuento que puedo aprovechar”",
+      "“Vivo en Houston, gracias a Mundo Espiritual, por cambiar mi mala suerte, mi vida cambió gracias a su ayuda”",
     plataform: "Facebook",
     url: "https://maps.app.goo.gl/nwRb6MySCjXTZcdHA",
   },
   {
     id: "02",
-    avatar: Testimonio1,
-    name: "Amore Amore",
+    avatar: Testimonio2,
+    name: "José Mendoza",
     content:
-      "“Recibi mi pedido en perfectas condiciones tenía miedo de que fuera algún fraude pero no fue asi. siempre estuvieron en contacto conmigo muy amables para atender mis dudas de primera compra, seguiré pidiendo y tienen siempre algún descuento que puedo aprovechar”",
+      "“Una persona estaba intentando separarme de mi familia con maldad, Mundo Espiritual me ayudó a recuperarla”",
     plataform: "Facebook",
     url: "https://maps.app.goo.gl/nwRb6MySCjXTZcdHA",
   },
   {
     id: "03",
-    avatar: Testimonio1,
-    name: "Amore Amore",
+    avatar: Testimonio3,
+    name: "Ana Alfaro",
     content:
-      "“Recibi mi pedido en perfectas condiciones tenía miedo de que fuera algún fraude pero no fue asi. siempre estuvieron en contacto conmigo muy amables para atender mis dudas de primera compra, seguiré pidiendo y tienen siempre algún descuento que puedo aprovechar”",
+      "“Recuperé a mi esposo, el amor volvió a nuestra vida gracias a Mundo Espiritual.”",
     plataform: "Facebook",
     url: "https://maps.app.goo.gl/nwRb6MySCjXTZcdHA",
   },
@@ -42,7 +44,7 @@ const testimonialsData = [
 
 export const Testimonials = () => {
   return (
-  <div className="w-full flex justify-center bg-white">
+    <div className="w-full flex justify-center bg-white">
       <MaxWidthWrapper className="max-w-7xl ">
         <section className="py-8  h-96  flex align-center justify-center flex-col w-full">
           <h3 className="text-[#002f4b] text-2xl font-bold mb-4 text-center">
@@ -59,7 +61,7 @@ export const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-    
+
             <div className="hidden md:block">
               <CarouselPrevious />
               <CarouselNext />
@@ -67,7 +69,7 @@ export const Testimonials = () => {
           </Carousel>
         </section>
       </MaxWidthWrapper>
-  </div>
+    </div>
   );
 };
 

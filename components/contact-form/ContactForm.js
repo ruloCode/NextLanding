@@ -11,7 +11,7 @@ export const ContactForm = () => {
   const [message, setMessage] = useState("");
   return (<div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-white">
     <h1 className="text-4xl font-bold mb-2">Contacto</h1>
-      <form className="w-full max-w-lg" method="post">
+      <form className="w-full max-w-lg p-2" method="post">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
             <label

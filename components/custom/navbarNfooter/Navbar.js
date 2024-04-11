@@ -6,86 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-const npaths = [
-  { name: "Inicio", path: "/" },
-  {
-    name: "Servicios",
-    childs: [
-      {
-        title: "Plan suscripciones",
-        link: "/planes",
-        icon: "/assets/svgs/star2.svg",
-        subs: true,
-        mini: true,
-      },
-      {
-        title: "Consulta inmediata",
-        link: "/",
-        icon: "/assets/svgs/screen-prof.svg",
-        mini: true,
-      },
-      {
-        title: "Consulta programada",
-        link: "/",
-        icon: "/assets/svgs/screen-prof.svg",
-        mini: true,
-      },
-      {
-        title: "Consulta domiciliaria",
-        link: "/",
-        icon: "/assets/svgs/screen-prof.svg",
-        mini: true,
-      },
-      {
-        title: "Tarjeta regalo ",
-        link: "/regalo",
-        icon: "/assets/svgs/screen-prof.svg",
-        mini: true,
-      },
-    ],
-  },
-  { name: "Empresas", path: "/empresas" },
-  { name: "Blog", path: "/blog" },
-  { name: "Profesionales", path: "/profesionales" },
-  { name: "Nosotros", path: "/nosotros" },
-];
 
-const Accordion = ({ title, children }) => {
-  const [show, setShow] = useState(false);
-
-  return (
-    <div className=" relative">
-      <button
-        onClick={() => setShow(!show)}
-        className="flex flex-row items-center justify-between gap-2 py-1.5 px-2"
-      >
-        <span className=" font-semibold text-white">{title}</span>
-
-        <svg
-          viewBox="0 0 14 8"
-          fill="none"
-          className={`aspect-square w-3 ${show && "transform rotate-180"}`}
-        >
-          <path
-            d="M13 1.00005C13 1.00005 8.58107 6.99999 6.99995 7C5.41884 7.00001 1 1 1 1"
-            stroke="#ffffff"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-
-      <div
-        className={`${
-          !show && "hidden"
-        } absolute z-50 left-0 flex flex-col bg-white border border-Input/Border rounded-2xl shadow-lg`}
-      >
-        {children}
-      </div>
-    </div>
-  );
-};
 
 export const Navbar = ({ small, autocomplete, showBack }) => {
   const pathname = usePathname();
@@ -98,7 +19,7 @@ export const Navbar = ({ small, autocomplete, showBack }) => {
     { name: "Contacto", path: "/contacto" },
     { name: "Maestro manccini", path: "/maestro-manccini" },
     { name: "Casa espiritual", path: "/casa-espiritual" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Blog", path: "/blog" },
   ];
 
   const [clientWindowHeight, setClientWindowHeight] = useState("");
