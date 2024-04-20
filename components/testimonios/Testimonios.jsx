@@ -44,7 +44,7 @@ export const Testimonios = () => {
       <h1 className="text-4xl font-bold text-center my-8">
         Nuestros testimonios
       </h1>
-      <div className="grid  gap-4 ">
+      <div className="grid  gap-4 md:grid-cols-2 items-start ">
         {testimonios.map((testimonio, index) => {
           return (
             <div

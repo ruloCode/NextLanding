@@ -1,12 +1,21 @@
 import ContactForm from "@/components/contact-form/ContactForm";
-import MaxWidthWrapper from "@/components/max-width-wrapper/MaxWidthWrapper";
 
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
+import MaxWidthWrapper from "@/components/max-width-wrapper/MaxWidthWrapper";
+<FontAwesomeIcon icon="fa-regular fa-circle-down" />
 export default async function page() {
   return (
     <div>
+      <ContactForm />
+
+    <div className="flex justify-center p-2 ">
+    <FontAwesomeIcon icon={faChevronCircleDown} size="lg" color="#000" />
+    </div>
       <MaxWidthWrapper className={"max-w-7xl py-8"}>
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-center mb-6">Contáctanos</h1>
+          <h1 className="text-3xl font-bold text-center mb-6">Nuestra ubucación</h1>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <p className="mb-4">
@@ -31,7 +40,7 @@ export default async function page() {
               </div>
               <div>
                 <p className="font-semibold">Email:</p>
-                <p>[your-email@example.com]</p>{" "}
+                <p>[espiritualmundo15@gmail.com]</p>{" "}
                 {/* Replace with actual email */}
               </div>
             </div>
@@ -48,7 +57,6 @@ export default async function page() {
           </div>
         </div>
       </MaxWidthWrapper>
-      <ContactForm />
     </div>
   );
 }

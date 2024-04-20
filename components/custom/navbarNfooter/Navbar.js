@@ -3,39 +3,61 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FbIcon } from "../svgs/FbIcon";
+import { InIcon } from "../svgs/InIcon";
+import { IgIcon } from "../svgs/IgIcon";
+
 import { usePathname } from "next/navigation";
-
-
-
 
 export const Navbar = ({ small, autocomplete, showBack }) => {
   const pathname = usePathname();
 
-
-
   const paths = [
     { name: "Artes curativas", path: "/" },
     { name: "Testimonios", path: "/testimonios" },
-    { name: "Contacto", path: "/contacto" },
     { name: "Maestro manccini", path: "/maestro-manccini" },
     { name: "Casa espiritual", path: "/casa-espiritual" },
+    { name: "Contacto", path: "/contacto" },
+
     // { name: "Blog", path: "/blog" },
+  ];
+
+  const socialMedia = [
+    {
+      title: "Instagram TeKer",
+      iconUrl: "/assets/svgs/igIcon.svg",
+      url: "https://www.instagram.com/mundoespiritualusa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      content: (
+        <IgIcon
+          className={` aspect-square w-6 ${
+            small ? " fill-[#00323E] " : " fill-white"
+          }`}
+        />
+      ),
+    },
+    {
+      title: "Facebook TeKer",
+      iconUrl: "/assets/svgs/fbIcon.svg",
+      url: "https://www.facebook.com/MundoEspiritualCA?mibextid=LQQJ4d",
+      content: (
+        <FbIcon
+          className={` aspect-square w-6 ${
+            small ? " fill-[#00323E] " : " fill-white"
+          }`}
+        />
+      ),
+    },
   ];
 
   const [clientWindowHeight, setClientWindowHeight] = useState("");
   const [scrolled, SetScrolled] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
-
-
-
- 
-
   const standard = (
     <div className={` w-full   bg-[#11181F] `}>
       <nav className={`max-w-7xl w-full  mx-auto  ${scrolled && " "}`}>
         <div
-          className={`w-full lg:flex  flex-col items-start justify-between mx-auto  px-4  ${
+          className={`w-full lg:flex   items-end justify-between mx-auto  px-4  ${
             scrolled && " "
           }`}
         >
@@ -106,6 +128,14 @@ export const Navbar = ({ small, autocomplete, showBack }) => {
               navbar ? "block " : "hidden"
             } rounded-2xl md:rounded-3xl`}
           >
+
+<div className=" w-full flex gap-2 justify-end px-4">
+        {socialMedia.map((elm, index) => (
+          <Link key={index} title={elm.title} href={elm.url} target="_blank">
+            {elm.content}
+          </Link>
+        ))}
+      </div>
             <ul className="lg:flex items-center justify-end space-y-4 sm:space-y-8 lg:space-x-6 lg:space-y-0 text-lg text-Text/Secondary">
               {paths.map((path, index) => (
                 <li
@@ -191,12 +221,10 @@ export const Navbar = ({ small, autocomplete, showBack }) => {
             {/* END logo */}
 
             {/* autocomplete */}
-          
+
             {/* autocomplete */}
           </div>
           {/* logo n autocomplete */}
-
-     
         </div>
 
         {/* START paths */}
@@ -235,8 +263,6 @@ export const Navbar = ({ small, autocomplete, showBack }) => {
       </div>
     </nav>
   );
-
-
 
   const hideBanner = ["/cita", "/cita/domiciliaria", "/solicitud-atencion"];
   const domesticBannerRoutes = ["/cita/domiciliaria"];

@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import { COLdate } from "@/lib/utils";
 
-
 import { FbIcon } from "../svgs/FbIcon";
 import { InIcon } from "../svgs/InIcon";
 import { IgIcon } from "../svgs/IgIcon";
@@ -62,21 +61,9 @@ export const Footer = ({ small = false }) => {
   const { currentYear } = COLdate();
   const socialMedia = [
     {
-      title: "Linkedin TeKer",
-      iconUrl: "/assets/svgs/inIcon.svg",
-      url: "https://www.linkedin.com/company/tekersalud/",
-      content: (
-        <InIcon
-          className={` aspect-square w-6 ${
-            small ? " fill-[#00323E] " : " fill-white"
-          }`}
-        />
-      ),
-    },
-    {
       title: "Instagram TeKer",
       iconUrl: "/assets/svgs/igIcon.svg",
-      url: "https://www.instagram.com/tekersalud/?igshid=MzRlODBiNWFlZA%3D%3D",
+      url: "https://www.instagram.com/mundoespiritualusa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       content: (
         <IgIcon
           className={` aspect-square w-6 ${
@@ -88,7 +75,7 @@ export const Footer = ({ small = false }) => {
     {
       title: "Facebook TeKer",
       iconUrl: "/assets/svgs/fbIcon.svg",
-      url: "https://www.facebook.com/Tekersalud?mibextid=LQQJ4d",
+      url: "https://www.facebook.com/MundoEspiritualCA?mibextid=LQQJ4d",
       content: (
         <FbIcon
           className={` aspect-square w-6 ${
@@ -99,7 +86,6 @@ export const Footer = ({ small = false }) => {
     },
   ];
 
-
   const standard = (
     <>
       {/* START first row */}
@@ -107,7 +93,7 @@ export const Footer = ({ small = false }) => {
       {/* END first row */}
 
       {/* START second row */}
-        
+
       <div className=" grid grid-cols-2 md:grid-cols-5 gap-12 z-10  w-full ">
         <div className=" flex flex-col space-y-3">
           {/* <span className=" mb-1 font-semibold text-xs">
@@ -119,8 +105,6 @@ export const Footer = ({ small = false }) => {
             </Link>
           ))}
         </div>
-
-  
 
         <div className=" hidden md:flex flex-col space-y-3">
           <span className=" mb-1 font-semibold text-xs">SOCIAL</span>
@@ -165,8 +149,8 @@ export const Footer = ({ small = false }) => {
           }`}
         >
           <MaxWidthWrapper className="max-w-7xl">
-          {standard}
-          {mini}
+            {standard}
+            {mini}
           </MaxWidthWrapper>
         </div>
       )}
