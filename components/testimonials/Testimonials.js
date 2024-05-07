@@ -48,7 +48,7 @@ export const Testimonials = () => {
       <MaxWidthWrapper className="max-w-7xl ">
         <section className="py-8  h-96  flex align-center justify-center flex-col w-full">
           <h3 className="text-[#002f4b] text-2xl font-bold mb-4 text-center">
-            Lo que nuesrtos clientes piensan de nosotros
+            Lo que nuestros clientes piensan de nosotros
           </h3>
           <Carousel>
             <CarouselContent>

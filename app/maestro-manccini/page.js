@@ -11,7 +11,7 @@ export default async function page() {
       <Maestro />
       <MaxWidthWrapper className={"max-w-7xl py-8"}>
         <div className="max-w-2xl mx-auto p-5">
-          <h1 className="text-3xl font-bold mb-4">Soy Isaías Mancini</h1>
+          <h1 className="text-3xl font-bold mb-4">Soy Isaías Manccini</h1>
           <p className="mb-3">
           Soy un Coach Espiritual, Parapsicólogo, y Tarotista con experiencia en medios de comunicación, incluida la radio en Houston. Bienvenido a Mundo Espiritual, un lugar de amor y gratitud.
           </p>
@@ -26,13 +26,14 @@ export default async function page() {
           Te invito a este viaje transformador; como tu guía espiritual, te proporcionaré apoyo y sabiduría en tu búsqueda de crecimiento personal y espiritual. Juntos podemos cambiar nuestras vidas y comprender mejor nuestro ser y el mundo.
           </p>
           <div className="flex justify-center">
-            <a
-              href="#"
+            <a target="_blank"
+              href="https://wa.me/18187201360?text=Hola%20maestro%20Manccini,%20quiero%20su%20orientación%20espiritual"
               className="inline-block bg-green-600 text-white font-bold rounded hover:bg-green-700 p-4"
             >
               
               <span className="mr-2">Contáctate conmigo aquí</span>
-               <FontAwesomeIcon icon={faWhatsapp} />
+               <FontAwesomeIcon icon={faWhatsapp} /> 
+              
             </a>
           </div>
         </div>

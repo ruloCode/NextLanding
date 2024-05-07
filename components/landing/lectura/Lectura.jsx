@@ -13,7 +13,8 @@ export const Lectura = () => {
         Yo tengo la solución con hechos
       </p>
       <button className="mt-6 px-6 py-2 border-2 border-white text-white font-semibold uppercase tracking-wider hover:bg-white hover:text-dark-blue transition duration-300 rounded-full">
-        Reserva tu consulta
+        <a target="_blank" href="https://wa.me/18187201360?text=Hola,%20quiero%20reservar%20mi%20consulta">Reserva tu consulta</a>
+        
       </button>
     </div>
   );
