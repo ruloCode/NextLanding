@@ -100,6 +100,7 @@ PIDE TU UBICACION MAS CERCANA Y HAS PARTE DE NUESTRA CASA. */}
               <h2 className="font-semibold">¡Te esperamos!</h2>
               <p>Los Angeles, Ca.</p>
               <p>90015</p>
+              <p>1605 w Olympic blvd</p>
               <p>United States</p>
               <p>Suite 9003</p>
             </div>

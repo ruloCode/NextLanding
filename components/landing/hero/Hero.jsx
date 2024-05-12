@@ -19,7 +19,7 @@ export const Hero = () => {
        
         <Button variant='secondary'  className='md:text-lg p-4 md:p-6 rounded-full font-semibold'>
           
-          <a target="_blank" href="https://wa.me/18187201360?text=Hola%20estoy%20interesado,%20me%20podr%C3%ADan%20dar%20más%20información">Lectura de tarot sin Costo</a>
+          <a target="_blank" href="https://wa.me/18184263603?text=Hola%20estoy%20interesado,%20me%20podr%C3%ADan%20dar%20más%20información">Lectura de tarot sin Costo</a>
         </Button>
       </div>
     </div>

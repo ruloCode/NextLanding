@@ -11,7 +11,7 @@ export const Consulta = () => {
         Atención Inmediata y Personalizada a un Clic de Distancia.
       </p>
       <Button className="md:text-lg p-4 md:p-6  font-semibold  bg-[#008DDA]  mt-4">
-       <a target="_blank" href="https://wa.me/18187201360?text=Hola,%20quiero%20reservar%20mi%20consulta">Reserva tu consulta</a>
+       <a target="_blank" href="https://wa.me/18184263603?text=Hola,%20quiero%20reservar%20mi%20consulta">Reserva tu consulta</a>
         
       </Button>
     </div>

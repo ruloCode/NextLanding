@@ -27,7 +27,7 @@ export default async function page() {
           </p>
           <div className="flex justify-center">
             <a target="_blank"
-              href="https://wa.me/18187201360?text=Hola%20maestro%20Manccini,%20quiero%20su%20orientación%20espiritual"
+              href="https://wa.me/18184263603?text=Hola%20maestro%20Manccini,%20quiero%20su%20orientación%20espiritual"
               className="inline-block bg-green-600 text-white font-bold rounded hover:bg-green-700 p-4"
             >
               

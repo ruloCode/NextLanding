@@ -1,21 +1,22 @@
 import ContactForm from "@/components/contact-form/ContactForm";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import MaxWidthWrapper from "@/components/max-width-wrapper/MaxWidthWrapper";
-<FontAwesomeIcon icon="fa-regular fa-circle-down" />
+<FontAwesomeIcon icon="fa-regular fa-circle-down" />;
 export default async function page() {
   return (
     <div>
       <ContactForm />
 
-    <div className="flex justify-center p-2 ">
-    <FontAwesomeIcon icon={faChevronCircleDown} size="lg" color="#000" />
-    </div>
+      <div className="flex justify-center p-2 ">
+        <FontAwesomeIcon icon={faChevronCircleDown} size="lg" color="#000" />
+      </div>
       <MaxWidthWrapper className={"max-w-7xl py-8"}>
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-center mb-6">Nuestra ubucación</h1>
+          <h1 className="text-3xl font-bold text-center mb-6">
+            Nuestra ubucación
+          </h1>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <p className="mb-4">
@@ -29,8 +30,8 @@ export default async function page() {
               <div className="mb-4">
                 <h2 className="font-semibold">Visítanos</h2>
                 <p>Los Angeles, Ca.</p>
-
                 <p>90015</p>
+                <p>1605 w Olympic blvd</p>
                 <p>United States</p>
                 <p>Suite 9003</p>
               </div>
