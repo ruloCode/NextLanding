@@ -13,7 +13,7 @@ export const Lectura = () => {
         Yo tengo la solución con hechos
       </p>
       <button className="mt-6 px-6 py-2 border-2 border-white text-white font-semibold uppercase tracking-wider hover:bg-white hover:text-dark-blue transition duration-300 rounded-full">
-        <a target="_blank" href="https://calendly.com/rulocode/15min">Reserva tu consulta</a>
+        <a target="_blank" href="https://calendly.com/espiritualmundo15/30min">Reserva tu consulta</a>
         
       </button>
     </div>
